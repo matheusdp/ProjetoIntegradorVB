@@ -14,10 +14,11 @@ public class SensorService {
     private SensorRepository sensorRepository;
 
     public List<Sensor> listarTodos() {
-        return sensorRepository.findAll();
+        return sensorRepository.findUltimosPorTipo();
     }
 
-    public Sensor salvar(Sensor sensor) {
-        return sensorRepository.save(sensor);
+    public List<Sensor> salvar(List<Sensor> sensores) {
+        return sensorRepository.saveAll(sensores);
     }
+
 }

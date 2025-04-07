@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -15,4 +17,11 @@ public class Sensor {
 
     private String tipo;
     private Double valor;
+
+    private LocalDateTime dataRegistro;
+
+    @PrePersist
+    protected void onCreate() {
+        this.dataRegistro = LocalDateTime.now();
+    }
 }

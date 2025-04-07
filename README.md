@@ -67,14 +67,22 @@ GET /sensores
 ```json
 [
   {
-    "id": 1,
+    "id": 101,
     "tipo": "temperatura",
-    "valor": 25.5
+    "valor": 24.0,
+    "dataRegistro": "2025-04-07T15:00:00"
   },
   {
-    "id": 2,
+    "id": 102,
     "tipo": "umidade",
-    "valor": 60.0
+    "valor": 0.0,
+    "dataRegistro": "2025-04-07T15:00:00"
+  },
+  {
+    "id": 103,
+    "tipo": "luminosidade",
+    "valor": 4.0,
+    "dataRegistro": "2025-04-07T15:00:00"
   }
 ]
 ```
@@ -86,18 +94,34 @@ Content-Type: application/json
 ```
 **Body:**
 ```json
-{
-  "tipo": "luminosidade",
-  "valor": 75.3
-}
+[
+  { "tipo": "temperatura", "valor": 24 },
+  { "tipo": "umidade", "valor": 50 },
+  { "tipo": "luminosidade", "valor": 0 }
+]
 ```
 **Resposta:**
 ```json
-{
-  "id": 3,
-  "tipo": "luminosidade",
-  "valor": 75.3
-}
+[
+  {
+    "id": 1,
+    "tipo": "temperatura",
+    "valor": 24.0,
+    "dataRegistro": "2025-04-07T17:26:20.468136"
+  },
+  {
+    "id": 2,
+    "tipo": "umidade",
+    "valor": 50.0,
+    "dataRegistro": "2025-04-07T17:26:20.4691357"
+  },
+  {
+    "id": 3,
+    "tipo": "luminosidade",
+    "valor": 0,
+    "dataRegistro": "2025-04-07T17:26:20.4691357"
+  }
+]
 ```
 
 ---

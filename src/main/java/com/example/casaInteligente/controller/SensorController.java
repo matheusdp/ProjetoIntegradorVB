@@ -20,7 +20,8 @@ public class SensorController {
     }
 
     @PostMapping
-    public Sensor adicionarSensor(@RequestBody Sensor sensor) {
-        return sensorService.salvar(sensor);
+    public List<Sensor> adicionarSensor(@RequestBody List<Sensor> sensores) {
+        return sensorService.salvar(sensores);
     }
+
 }
