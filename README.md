@@ -4,6 +4,12 @@
 Este projeto foi desenvolvido para transformar uma casa antiga em um ambiente inteligente, onde é possível monitorar e armazenar informações sobre **temperatura, umidade e luminosidade**. Os dados são coletados por sensores conectados a um **Arduino UNO** e enviados para um **backend Java com Spring Boot**.
 
 ---
+## 📐 Protótipos
+
+- **Figma:** [Projeto Integrador - VB no Figma](https://www.figma.com/design/Xgx3u7HGqDx4LIzr3MSCTG/Projeto-Integrador---VB?m=auto&t=Q7X6hqhT3axgXl2g-1)  
+- **Tinkercad:** [Projeto Integrador - VB no Tinkercad](https://www.tinkercad.com/things/c9xCHHRGyhO-projeto-integrador-vb?sharecode=DN-x0DvpCHifIIUqu8TIzENXT1Pn3qRYiMkdx3KIlYM)
+
+---
 ## ⚙️ Tecnologias Utilizadas
 
 ### 💻 **Backend**
